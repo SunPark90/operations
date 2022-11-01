@@ -23,14 +23,12 @@ def Check_IssueList():
 
 
 
-
 left_join_null['변경매장명'].values.tolist()
 K = []
 for i in left_join_null['변경매장명'].values.tolist():
 	if len(i) > 3:
 		k = i[:3]
 		K.append(k)
-
 
 
 def Check_IssueList():
@@ -42,3 +40,6 @@ def Check_IssueList():
 				admin_list.remove(j)
 				break
 	return 	print(*admin_list, sep='\n')
+
+
+
